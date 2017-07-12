@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    title Create Product
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  body
+    .container
+      h2 Create product page
+      form.product-form(action='http://localhost:3000/users/create', method='post')
+          .input-block
+            p Product Name:
+            input.input-box(type='text', name='productName', placeholder='Product Name', autofocus='', required='')
+          .input-block
+            p Category:
+            input.input-box(type='text', name='category', placeholder='Category', required='')
+          .input-block
+            p Price:
+            input.input-box(type='number', name='price', placeholder='Price', required='')
+          .input-block
+            p Description:
+            textarea.input-box(name='description', placeholder='Description', rows='2', cols='80', required='')
+          .input-block
+            p Quantity:
+            input.input-box(type='number', name='quantity', placeholder='Quantity', required='')
+          .input-block
+            p Model:
+            input.input-box(type='text', name='model', placeholder='Model', required='')
+          .input-block
+            p Brand Name:
+            input.input-box(type='text', name='brandName', placeholder='Brand Name', required='')
+          .input-block
+            p Size:
+            input.input-box(type='text', name='size', placeholder='Size', required='')
+          br
+          button.btn.btn-primary.btn-block(type='submit', name='submit') Submit
+          br
+
+        
+    
