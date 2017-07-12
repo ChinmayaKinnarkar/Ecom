@@ -12,6 +12,6 @@ Here's a quick list of the most important parts of the tech stack to involved in
 - NodeJS
 - Express
 - MongoDB
-- Jade Templating Engine
+- Jade(Pug) Templating Engine
 
 
